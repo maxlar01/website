@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { blogPosts } from "@/lib/data";
+import { getPostContent } from "@/lib/markdown";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -24,7 +25,7 @@ export async function generateMetadata({
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} | Alex Morgan`,
+    title: `${post.title} | Moustafa Rakha`,
     description: post.excerpt,
   };
 }
@@ -36,6 +37,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   if (!post) {
     notFound();
   }
+
+  const contentHtml = await getPostContent(post.slug);
 
   return (
     <article className="py-20 sm:py-28">
@@ -83,23 +86,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Post content */}
         <div className="prose prose-neutral dark:prose-invert max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-code:font-mono prose-code:text-sm prose-pre:bg-muted prose-pre:border prose-pre:border-border/50 prose-pre:rounded-xl prose-pre:overflow-x-auto prose-code:break-words">
-          <div
-            dangerouslySetInnerHTML={{
-              __html: post.content
-                .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-                .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-                .replace(
-                  /```(\w+)?\n([\s\S]*?)```/gm,
-                  '<pre><code class="language-$1">$2</code></pre>'
-                )
-                .replace(/`([^`]+)`/g, '<code>$1</code>')
-                .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-                .replace(/\n\n/g, '</p><p>')
-                .replace(/^(?!<[hpuc])/gm, '<p>')
-                .replace(/(<p>\s*<)/g, '<')
-                .replace(/<p>\s*<\/p>/g, ''),
-            }}
-          />
+          <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </div>
 
         <Separator className="mt-16 mb-8" />

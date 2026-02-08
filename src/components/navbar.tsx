@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetDescription, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
@@ -81,6 +81,8 @@ export function Navbar() {
               </Button>
             </SheetTrigger>
           <SheetContent side="right" className="w-72">
+            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+            <SheetDescription className="sr-only">Site navigation links</SheetDescription>
             <nav className="flex flex-col gap-2 mt-8">
               {navLinks.map((link) => (
                 <Link

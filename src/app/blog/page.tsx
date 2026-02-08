@@ -11,7 +11,7 @@ import {
 import { blogPosts } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Blog | Alex Morgan",
+  title: "Blog | Moustafa Rakha",
   description:
     "Articles about DevOps, cloud infrastructure, Kubernetes, CI/CD, and infrastructure as code.",
 };

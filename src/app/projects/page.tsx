@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ProjectsGrid } from "./projects-grid";
 
 export const metadata: Metadata = {
-  title: "Projects | Alex Morgan",
+  title: "Projects | Moustafa Rakha",
   description:
-    "Open-source DevOps tools, infrastructure projects, and automation utilities built by Alex Morgan.",
+    "Open-source DevOps tools, infrastructure projects, and automation utilities built by Moustafa Rakha.",
 };
 
 export default function ProjectsPage() {

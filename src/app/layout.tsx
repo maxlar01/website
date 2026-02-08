@@ -20,6 +20,10 @@ export const metadata: Metadata = {
   title: "Moustafa Rakha | DevOps Engineer",
   description:
     "Portfolio of Moustafa Rakha — DevOps Engineer specializing in cloud infrastructure, Kubernetes, CI/CD, and infrastructure as code.",
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/apple-icon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -40,7 +44,9 @@ export default function RootLayout({
         >
           <ParticlesBackground />
           <Navbar />
-          <main className="min-h-[calc(100vh-4rem)]">{children}</main>
+          <main className="min-h-[calc(100vh-4rem)]">
+            {children}
+          </main>
           <Footer />
         </ThemeProvider>
       </body>

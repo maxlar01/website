@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alex Morgan | DevOps Engineer",
+  title: "Moustafa Rakha | DevOps Engineer",
   description:
-    "Portfolio of Alex Morgan — DevOps Engineer specializing in cloud infrastructure, Kubernetes, CI/CD, and infrastructure as code.",
+    "Portfolio of Moustafa Rakha — DevOps Engineer specializing in cloud infrastructure, Kubernetes, CI/CD, and infrastructure as code.",
 };
 
 export default function RootLayout({

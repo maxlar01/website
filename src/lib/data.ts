@@ -5,7 +5,7 @@ export const siteConfig = {
     "Building resilient infrastructure, automating everything, and bridging the gap between development and operations.",
   email: "moustafa.hassan.rakha@gmail.com",
   github: "https://github.com/maxlar01",
-  linkedin: "https://linkedin.com/moustafa-rakha",
+  linkedin: "https://www.linkedin.com/in/moustafa-rakha/",
   twitter: "https://twitter.com/maxlar01",
 };
 

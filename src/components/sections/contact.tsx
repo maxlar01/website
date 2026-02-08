@@ -30,25 +30,25 @@ export function ContactSection() {
           </p>
 
           <div className="mt-8">
-            <Button size="lg" asChild>
-              <Link href={`mailto:${siteConfig.email}`}>
-                <Mail className="mr-2 h-4 w-4" />
-                {siteConfig.email}
+            <Button size="lg" className="max-w-full" asChild>
+              <Link href={`mailto:${siteConfig.email}`} className="truncate">
+                <Mail className="mr-2 h-4 w-4 shrink-0" />
+                <span className="truncate">{siteConfig.email}</span>
               </Link>
             </Button>
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-4">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             {socials.map((social) => (
-              <Button key={social.label} variant="outline" size="lg" asChild>
+              <Button key={social.label} variant="outline" size="default" asChild>
                 <Link
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <social.icon className="mr-2 h-4 w-4" />
-                  {social.label}
-                  <ArrowUpRight className="ml-1 h-3 w-3" />
+                  <social.icon className="h-4 w-4 sm:mr-2" />
+                  <span className="hidden sm:inline">{social.label}</span>
+                  <ArrowUpRight className="ml-1 h-3 w-3 hidden sm:inline" />
                 </Link>
               </Button>
             ))}

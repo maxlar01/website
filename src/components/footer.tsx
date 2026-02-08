@@ -14,7 +14,7 @@ export function Footer() {
               <Terminal className="h-4 w-4" />
             </div>
             <span className="font-mono text-sm font-bold">
-              alex<span className="text-primary/60">.dev</span>
+              maxlar<span className="text-primary/60">.dev</span>
             </span>
           </div>
 
@@ -62,7 +62,7 @@ export function Footer() {
 
         <Separator />
 
-        <div className="flex items-center justify-center py-6 text-sm text-muted-foreground">
+        <div className="flex items-center justify-center py-6 text-sm text-muted-foreground text-center px-4">
           <p>© {new Date().getFullYear()} {siteConfig.name}. Built with Next.js & deployed on the edge.</p>
         </div>
       </div>

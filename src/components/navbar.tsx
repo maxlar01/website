@@ -34,7 +34,7 @@ export function Navbar() {
             <Terminal className="h-5 w-5" />
           </div>
           <span className="font-mono text-lg font-bold tracking-tight">
-            alex<span className="text-primary/60">.dev</span>
+            maxlar<span className="text-primary/60">.dev</span>
           </span>
         </Link>
 
@@ -67,7 +67,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <ThemeToggle />
           <Button variant="outline" size="sm" asChild>
-            <Link href="mailto:alex@devops-portfolio.dev">Get in Touch</Link>
+            <Link href="mailto:maxlar@devops-portfolio.dev">Get in Touch</Link>
           </Button>
         </div>
 
@@ -100,7 +100,7 @@ export function Navbar() {
               <div className="mt-4 px-4">
                 <Button className="w-full" asChild>
                   <Link
-                    href="mailto:alex@devops-portfolio.dev"
+                    href="mailto:maxlar@devops-portfolio.dev"
                     onClick={() => setOpen(false)}
                   >
                     Get in Touch

@@ -54,9 +54,9 @@ export default function BlogPage() {
                       {post.readTime}
                     </span>
                   </div>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors flex items-center gap-2">
-                    {post.title}
-                    <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    <span className="inline">{post.title}</span>
+                    <ArrowRight className="ml-2 inline h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
                   </CardTitle>
                   <CardDescription className="text-base leading-relaxed">
                     {post.excerpt}

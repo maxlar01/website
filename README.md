@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A modern, performant portfolio website showcasing projects, skills, and technical writing with an engaging user experience.
 
-First, run the development server:
+## 🚀 Technologies & Tools
+
+### Core Framework
+
+- **[Next.js 16](https://nextjs.org)** - React framework with App Router, server components, and Turbopack
+- **[React 19](https://react.dev)** - Latest React with improved concurrent rendering and server components
+- **[TypeScript 5](https://www.typescriptlang.org)** - Full type safety across the entire application
+
+### Styling & UI Components
+
+- **[Tailwind CSS 4](https://tailwindcss.com)** - Utility-first CSS framework with custom design system
+- **[@tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)** - Beautiful typography defaults for markdown content
+- **[shadcn/ui](https://ui.shadcn.com)** - Accessible, customizable component system built on Radix UI
+- **[Radix UI](https://www.radix-ui.com)** - Unstyled, accessible UI primitives
+- **[Lucide React](https://lucide.dev)** - Clean, consistent icon library with 1000+ icons
+- **[class-variance-authority](https://cva.style)** - Type-safe component variants
+- **[tailwind-merge](https://github.com/dcastil/tailwind-merge)** - Intelligently merge Tailwind classes
+- **[clsx](https://github.com/lukeed/clsx)** - Tiny utility for constructing className strings
+
+### Animation & Interactive Effects
+
+- **[Framer Motion](https://www.framer.com/motion/)** - Production-ready React animation library
+- **[tsParticles](https://particles.js.org)** - Lightweight particle animations and interactive backgrounds
+  - `@tsparticles/engine` - Core particle engine
+  - `@tsparticles/react` - React integration
+  - `@tsparticles/slim` - Optimized bundle with essential features
+
+### Theming
+
+- **[next-themes](https://github.com/pacocoursey/next-themes)** - Perfect dark mode with system preference detection and no flash
+
+### Content Processing & Markdown
+
+- **[unified](https://unifiedjs.com)** - Interface for parsing, transforming, and serializing content
+- **[remark-parse](https://github.com/remarkjs/remark)** - Markdown parser
+- **[remark-rehype](https://github.com/remarkjs/remark-rehype)** - Transform markdown (remark) to HTML (rehype)
+- **[rehype-highlight](https://github.com/rehypejs/rehype-highlight)** - Syntax highlighting for code blocks
+- **[rehype-stringify](https://github.com/rehypejs/rehype)** - Serialize HTML
+
+### Development Tools
+
+- **[pnpm](https://pnpm.io)** - Fast, disk space efficient package manager
+- **[ESLint 9](https://eslint.org)** - Linting with Next.js recommended configuration
+- **[React Compiler](https://react.dev/learn/react-compiler)** - Automatic optimization and memoization
+- **[PostCSS](https://postcss.org)** - CSS transformations with Tailwind integration
+
+## ✨ Features
+
+- **🎨 Modern Design** - Clean, professional interface with smooth animations
+- **🌓 Dark Mode** - Seamless theme switching with system preference support
+- **📝 Blog System** - Markdown-based technical writing with syntax highlighting
+- **💼 Project Showcase** - Grid layout displaying featured projects
+- **⚡ Performance** - Optimized with Next.js App Router and React Server Components
+- **📱 Responsive** - Mobile-first design that works on all devices
+- **♿ Accessible** - Built with accessibility in mind using Radix UI primitives
+- **🔍 SEO Optimized** - Proper meta tags and semantic HTML structure
+- **✨ Interactive UI** - Particle effects and smooth transitions
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js 20 or later
+- pnpm 10.29.2 (enforced via `packageManager` field)
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Start development server with hot reload
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-## Learn More
+### Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Create optimized production build
+pnpm build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start production server
+pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Linting
 
-## Deploy on Vercel
+```bash
+# Run ESLint
+pnpm lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── blog/              # Blog listing and dynamic post pages
+│   ├── projects/          # Projects showcase
+│   ├── layout.tsx         # Root layout with theme provider
+│   ├── page.tsx           # Homepage
+│   └── template.tsx       # Page transition wrapper
+├── components/
+│   ├── sections/          # Page sections (Hero, Skills, Experience, etc.)
+│   ├── ui/               # shadcn/ui components (Badge, Button, Card, etc.)
+│   ├── animated.tsx       # Animated wrapper components
+│   ├── footer.tsx         # Site footer
+│   ├── navbar.tsx         # Navigation bar
+│   ├── particles-background.tsx  # tsParticles configuration
+│   ├── theme-provider.tsx # next-themes provider
+│   └── theme-toggle.tsx   # Dark mode toggle
+├── content/              # Markdown blog posts
+│   ├── *.md
+└── lib/
+    ├── data.ts          # Site configuration and static content
+    ├── markdown.ts      # Markdown processing utilities
+    └── utils.ts         # Helper functions (cn, etc.)
+```
+
+## 📄 License
+
+See the [LICENSE](LICENSE) file for details.

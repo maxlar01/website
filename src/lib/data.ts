@@ -6,7 +6,7 @@ export const siteConfig = {
   email: "moustafa.hassan.rakha@gmail.com",
   github: "https://github.com/maxlar01",
   linkedin: "https://www.linkedin.com/in/moustafa-rakha/",
-  twitter: "https://twitter.com/maxlar01",
+  twitter: "https://twitter.com/maxlar_",
 };
 
 export const skills = [

@@ -31,7 +31,7 @@ export function ExperienceSection() {
 
           {experiences.map((exp, index) => (
             <StaggerItem
-              key={exp.role}
+              key={exp.company}
               className={`relative mb-12 last:mb-0 pl-8 md:pl-0 md:w-1/2 ${
                 index % 2 === 0
                   ? "md:pr-12 md:text-right"

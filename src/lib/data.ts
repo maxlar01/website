@@ -20,11 +20,11 @@ export const skills = [
   },
   {
     category: "CI/CD",
-    items: ["GitHub Actions", "GitLab CI", "Jenkins", "ArgoCD"],
+    items: ["GitHub Actions", "GitLab CI", "ArgoCD"],
   },
   {
     category: "Infrastructure as Code",
-    items: ["Terraform", "Ansible", "Pulumi", "CloudFormation"],
+    items: ["Terraform", "Ansible"],
   },
   {
     category: "Monitoring & Observability",
@@ -38,29 +38,38 @@ export const skills = [
 
 export const experiences = [
   {
-    role: "Senior DevOps Engineer",
-    company: "CloudScale Inc.",
-    period: "2023 – Present",
-    description:
-      "Leading infrastructure automation for a SaaS platform serving 2M+ users. Reduced deployment times by 80% and achieved 99.99% uptime through GitOps workflows and Kubernetes.",
-  },
-  {
     role: "DevOps Engineer",
-    company: "DataFlow Systems",
-    period: "2021 – 2023",
+    company: "b_labs",
+    period: "2026 – Present",
     description:
-      "Built CI/CD pipelines, managed multi-cloud Kubernetes clusters, and implemented infrastructure as code with Terraform across 3 cloud providers.",
+      "Building and maintaining scalable infrastructure on AWS, implementing GitOps workflows with ArgoCD, and optimizing CI/CD pipelines for multiple teams. Managing Kubernetes clusters, automated deployments, and improved monitoring and alerting systems to ensure high availability and performance.",
   },
   {
-    role: "Systems Engineer",
-    company: "TechStart Labs",
-    period: "2019 – 2021",
+    role: "Software Engineer",
+    company: "Sylndr",
+    period: "2024 – 2026",
     description:
-      "Managed Linux server fleets, implemented configuration management with Ansible, and migrated legacy applications to containerized deployments.",
+      "Built CI/CD pipelines, dockerfiles, and worked on most of Sylndr's retail, wholesale and fintech products (Website, Mobile app, elAjans and Sylndr Swift).",
+  },
+  {
+    role: "Software Engineer",
+    company: "MegaSoft IT Consulting and Training",
+    period: "2023 – 2024",
+    description:
+      "Managed Linux servers, developed GlowEye software front-end on IBM Cognos for Telecom Egypt, and developed custom TypeScript visualizations for IBM Cognos.",
   },
 ];
 
 export const projects = [
+  {
+    title: "Docker Image Optimizer (DIO)",
+    description:
+      "An automated pipeline that analyzes Docker images, suggests optimizations, reduces image sizes, and enforces security best practices.",
+    tags: ["Docker", "Go", "Security", "Automation"],
+    github: "https://github.com/maxlar01/docker-image-optimizer",
+    live: "",
+    featured: true,
+  },
   {
     title: "K8s Multi-Cluster Manager",
     description:
@@ -86,22 +95,13 @@ export const projects = [
     tags: ["Python", "GitHub Actions", "GitLab CI", "CLI"],
     github: "https://github.com",
     live: "",
-    featured: true,
+    featured: false,
   },
   {
     title: "Prometheus Alert Manager Dashboard",
     description:
       "A custom Grafana dashboard and Prometheus alerting ruleset for monitoring Kubernetes clusters, with Slack and PagerDuty integrations.",
     tags: ["Prometheus", "Grafana", "Kubernetes", "Monitoring"],
-    github: "https://github.com",
-    live: "",
-    featured: false,
-  },
-  {
-    title: "Docker Image Optimizer",
-    description:
-      "An automated pipeline that analyzes Docker images, suggests optimizations, reduces image sizes by up to 60%, and enforces security best practices.",
-    tags: ["Docker", "Python", "Security", "Automation"],
     github: "https://github.com",
     live: "",
     featured: false,

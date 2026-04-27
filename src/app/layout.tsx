@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Moustafa Rakha | DevOps Engineer",
+  title: "Moustafa Rakha | Software Engineer",
   description:
-    "Portfolio of Moustafa Rakha — DevOps Engineer specializing in cloud infrastructure, Kubernetes, CI/CD, and infrastructure as code.",
+    "Portfolio of Moustafa Rakha — Software Engineer building full-stack web applications, APIs, and developer tools with TypeScript, React, and Node.js.",
   icons: {
     icon: "/favicon.svg",
     apple: "/apple-icon.svg",

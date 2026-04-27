@@ -4,7 +4,7 @@ import { ProjectsGrid } from "./projects-grid";
 export const metadata: Metadata = {
   title: "Projects | Moustafa Rakha",
   description:
-    "Open-source DevOps tools, infrastructure projects, and automation utilities built by Moustafa Rakha.",
+    "Software projects, open-source tools, and developer utilities built by Moustafa Rakha.",
 };
 
 export default function ProjectsPage() {
@@ -20,8 +20,8 @@ export default function ProjectsPage() {
             All Projects
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            A collection of open-source tools, infrastructure modules, and
-            automation utilities I&apos;ve built throughout my career.
+            A collection of software projects, open-source tools, and developer
+            utilities I&apos;ve built throughout my career.
           </p>
         </div>
 

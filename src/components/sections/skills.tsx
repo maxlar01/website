@@ -21,8 +21,8 @@ export function SkillsSection() {
             Tech Stack & Skills
           </h2>
           <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
-            Tools and technologies I use daily to build, deploy, and maintain
-            scalable infrastructure.
+            Tools and technologies I use daily to build, ship, and maintain
+            software products.
           </p>
         </div>
 

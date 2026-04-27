@@ -24,9 +24,8 @@ export function ContactSection() {
             Get in Touch
           </h2>
           <p className="mt-4 text-muted-foreground leading-relaxed">
-            I&apos;m always interested in discussing DevOps challenges,
-            infrastructure architecture, or open-source collaboration. Feel free
-            to reach out!
+            I&apos;m always interested in discussing software engineering challenges,
+            product ideas, or open-source collaboration. Feel free to reach out!
           </p>
 
           <div className="mt-8">

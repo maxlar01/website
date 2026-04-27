@@ -20,7 +20,7 @@ export function ExperienceSection() {
             Experience
           </h2>
           <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
-            A timeline of my career building and scaling infrastructure.
+            A timeline of my career building products and shipping software.
           </p>
         </div>
 

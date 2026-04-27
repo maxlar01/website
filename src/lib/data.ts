@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: "Moustafa Rakha",
-  title: "DevOps Engineer",
+  title: "Software Engineer",
   description:
-    "Building resilient infrastructure, automating everything, and bridging the gap between development and operations.",
+    "Building reliable, scalable software — from clean APIs to polished UIs — with a focus on developer experience and shipping products that matter.",
   email: "moustafa.hassan.rakha@gmail.com",
   github: "https://github.com/maxlar01",
   linkedin: "https://www.linkedin.com/in/moustafa-rakha/",
@@ -11,107 +11,103 @@ export const siteConfig = {
 
 export const skills = [
   {
-    category: "Cloud Platforms",
-    items: ["AWS", "Google Cloud", "Azure", "DigitalOcean"],
+    category: "Frontend",
+    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
   },
   {
-    category: "Containers & Orchestration",
-    items: ["Docker", "Kubernetes", "Helm", "Podman"],
+    category: "Backend",
+    items: ["Node.js", "Python", "Go", "REST APIs", "GraphQL"],
   },
   {
-    category: "CI/CD",
-    items: ["GitHub Actions", "GitLab CI", "ArgoCD"],
+    category: "Databases",
+    items: ["PostgreSQL", "MongoDB", "Redis", "Prisma"],
   },
   {
-    category: "Infrastructure as Code",
-    items: ["Terraform", "Ansible"],
+    category: "Cloud & DevOps",
+    items: ["AWS", "Docker", "Kubernetes", "GitHub Actions", "Terraform"],
   },
   {
-    category: "Monitoring & Observability",
-    items: ["Prometheus", "Grafana", "Datadog", "ELK Stack"],
-  },
-  {
-    category: "Scripting & Languages",
-    items: ["Python", "Bash", "Go", "TypeScript"],
+    category: "Tools & Practices",
+    items: ["Git", "Testing", "System Design", "Agile", "CI/CD"],
   },
 ];
 
 export const experiences = [
   {
-    role: "DevOps Engineer",
+    role: "Software Engineer",
     company: "b_labs",
     period: "2026 – Present",
     description:
-      "Building and maintaining scalable infrastructure on AWS, implementing GitOps workflows with ArgoCD, and optimizing CI/CD pipelines for multiple teams. Managing Kubernetes clusters, automated deployments, and improved monitoring and alerting systems to ensure high availability and performance.",
+      "Building and shipping software across the full stack, collaborating with product and design to deliver features end-to-end. Also own the infrastructure layer — managing AWS environments, Kubernetes clusters, and CI/CD pipelines to keep deployments fast, reliable, and observable.",
   },
   {
     role: "Software Engineer",
     company: "Sylndr",
     period: "2024 – 2026",
     description:
-      "Built CI/CD pipelines, dockerfiles, and worked on most of Sylndr's retail, wholesale and fintech products (Website, Mobile app, elAjans and Sylndr Swift).",
+      "Worked across Sylndr's retail, wholesale, and fintech products — including the main Website, Mobile app, elAjans, and Sylndr Swift. Contributed to feature development, performance improvements, and the internal tooling that kept the engineering team moving quickly.",
   },
   {
     role: "Software Engineer",
     company: "MegaSoft IT Consulting and Training",
     period: "2023 – 2024",
     description:
-      "Managed Linux servers, developed GlowEye software front-end on IBM Cognos for Telecom Egypt, and developed custom TypeScript visualizations for IBM Cognos.",
+      "Developed the GlowEye front-end on IBM Cognos for Telecom Egypt and built custom TypeScript data visualizations that replaced generic Cognos charts with purpose-built, interactive components tailored to client reporting needs.",
   },
 ];
 
 export const projects = [
   {
+    title: "maxlar.dev",
+    description:
+      "This portfolio — a fast, animated personal site built with Next.js, TypeScript, and Tailwind CSS. Features dark mode, tsParticles background, Framer Motion page transitions, and statically generated blog posts from Markdown.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    github: "https://github.com/maxlar01/website",
+    live: "https://maxlar.dev",
+    featured: true,
+  },
+  {
     title: "Docker Image Optimizer (DIO)",
     description:
-      "An automated pipeline that analyzes Docker images, suggests optimizations, reduces image sizes, and enforces security best practices.",
-    tags: ["Docker", "Go", "Security", "Automation"],
+      "A developer-productivity CLI tool written in Go that analyzes Docker images, surfaces layer-by-layer optimization opportunities, and enforces security best practices — helping teams ship smaller, safer container images.",
+    tags: ["Go", "Docker", "CLI", "Developer Tools"],
     github: "https://github.com/maxlar01/docker-image-optimizer",
     live: "",
     featured: true,
   },
   {
-    title: "K8s Multi-Cluster Manager",
+    title: "Realtime Chat API",
     description:
-      "An open-source tool for managing deployments across multiple Kubernetes clusters with automated failover and traffic shifting. Built with Go and integrates with ArgoCD for GitOps workflows.",
-    tags: ["Kubernetes", "Go", "ArgoCD", "GitOps"],
-    github: "https://github.com",
+      "A scalable WebSocket-based chat backend built with Node.js and Redis Pub/Sub. Supports multiple rooms, presence tracking, and message history with a PostgreSQL persistence layer.",
+    tags: ["Node.js", "WebSockets", "Redis", "PostgreSQL"],
+    github: "https://github.com/maxlar01",
     live: "",
     featured: true,
   },
   {
-    title: "Terraform AWS Landing Zone",
+    title: "Form Builder",
     description:
-      "A production-ready Terraform module for setting up a secure, multi-account AWS organization with VPC networking, IAM policies, and security guardrails.",
-    tags: ["Terraform", "AWS", "IaC", "Security"],
-    github: "https://github.com",
-    live: "",
-    featured: true,
-  },
-  {
-    title: "CI/CD Pipeline Generator",
-    description:
-      "A CLI tool that generates optimized CI/CD pipelines for GitHub Actions, GitLab CI, and Jenkins based on your project's tech stack and requirements.",
-    tags: ["Python", "GitHub Actions", "GitLab CI", "CLI"],
-    github: "https://github.com",
+      "A drag-and-drop form builder SPA with a React frontend and a REST API backend. Supports conditional logic, multi-step forms, response collection, and CSV export.",
+    tags: ["React", "TypeScript", "Node.js", "REST API"],
+    github: "https://github.com/maxlar01",
     live: "",
     featured: false,
   },
   {
-    title: "Prometheus Alert Manager Dashboard",
+    title: "Dev Notes",
     description:
-      "A custom Grafana dashboard and Prometheus alerting ruleset for monitoring Kubernetes clusters, with Slack and PagerDuty integrations.",
-    tags: ["Prometheus", "Grafana", "Kubernetes", "Monitoring"],
-    github: "https://github.com",
+      "A markdown-first note-taking app with full-text search, tag filtering, and syntax-highlighted code blocks. Built as a Next.js app with local-first storage using IndexedDB.",
+    tags: ["Next.js", "TypeScript", "IndexedDB", "Markdown"],
+    github: "https://github.com/maxlar01",
     live: "",
     featured: false,
   },
   {
-    title: "Infrastructure Cost Analyzer",
+    title: "Budget Tracker CLI",
     description:
-      "A tool that analyzes cloud infrastructure spending across AWS, GCP, and Azure, providing actionable recommendations for cost optimization.",
-    tags: ["Python", "AWS", "GCP", "Azure", "FinOps"],
-    github: "https://github.com",
+      "A terminal-based personal finance tracker written in Python. Parses bank statement CSVs, categorizes transactions with a simple rules engine, and renders monthly reports in the terminal.",
+    tags: ["Python", "CLI", "Data Parsing", "Finance"],
+    github: "https://github.com/maxlar01",
     live: "",
     featured: false,
   },
@@ -128,48 +124,48 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "kubernetes-zero-downtime-deployments",
-    title: "Zero-Downtime Deployments on Kubernetes: A Practical Guide",
+    slug: "type-safe-rest-api-nodejs-typescript",
+    title: "Building a Type-Safe REST API with Node.js and TypeScript",
     excerpt:
-      "Learn how to implement rolling updates, blue-green deployments, and canary releases on Kubernetes to achieve true zero-downtime deployments for your applications.",
-    date: "2026-01-15",
-    readTime: "8 min read",
-    tags: ["Kubernetes", "DevOps", "Deployment"],
-  },
-  {
-    slug: "terraform-best-practices-2026",
-    title: "Terraform Best Practices for Production in 2026",
-    excerpt:
-      "A comprehensive guide to structuring Terraform code for large-scale production environments, including module design, state management, and testing strategies.",
-    date: "2025-12-20",
-    readTime: "12 min read",
-    tags: ["Terraform", "IaC", "Best Practices"],
-  },
-  {
-    slug: "gitops-with-argocd",
-    title: "Getting Started with GitOps Using ArgoCD",
-    excerpt:
-      "A hands-on tutorial for implementing GitOps workflows with ArgoCD, from installation to managing production applications declaratively through Git.",
-    date: "2025-11-10",
+      "A practical walkthrough for setting up an Express API with end-to-end type safety using TypeScript, Zod for runtime validation, and Prisma as a type-safe ORM.",
+    date: "2026-02-10",
     readTime: "10 min read",
-    tags: ["GitOps", "ArgoCD", "Kubernetes"],
+    tags: ["Node.js", "TypeScript", "REST API", "Backend"],
   },
   {
-    slug: "monitoring-kubernetes-prometheus-grafana",
-    title: "Complete Kubernetes Monitoring with Prometheus & Grafana",
+    slug: "react-performance-optimization",
+    title: "React Performance Optimization: Patterns and Pitfalls",
     excerpt:
-      "Set up comprehensive monitoring for your Kubernetes clusters using the Prometheus-Grafana stack, including custom metrics, alerts, and dashboards.",
-    date: "2025-10-05",
-    readTime: "15 min read",
-    tags: ["Monitoring", "Prometheus", "Grafana", "Kubernetes"],
+      "A deep-dive into React rendering behaviour — when to use memo, useMemo, and useCallback, how to profile with DevTools, and common mistakes that silently kill performance.",
+    date: "2026-01-18",
+    readTime: "12 min read",
+    tags: ["React", "Performance", "Frontend"],
   },
   {
-    slug: "docker-security-best-practices",
-    title: "Docker Security: Hardening Your Container Images",
+    slug: "scalable-database-schema-design",
+    title: "Designing Scalable Database Schemas",
     excerpt:
-      "Learn essential Docker security practices including minimal base images, multi-stage builds, vulnerability scanning, and runtime security configurations.",
-    date: "2025-09-18",
+      "How to design relational schemas that age well: normalization trade-offs, indexing strategies, pagination patterns, and when to reach for denormalization.",
+    date: "2025-12-05",
+    readTime: "11 min read",
+    tags: ["Databases", "PostgreSQL", "System Design"],
+  },
+  {
+    slug: "cicd-for-modern-web-apps",
+    title: "CI/CD for Modern Web Apps: A Practical Guide",
+    excerpt:
+      "Setting up a production-grade CI/CD pipeline for a Next.js app — automated testing, preview deployments, semantic versioning, and rollback strategies using GitHub Actions.",
+    date: "2025-11-14",
     readTime: "9 min read",
-    tags: ["Docker", "Security", "Containers"],
+    tags: ["CI/CD", "GitHub Actions", "DevOps", "Next.js"],
+  },
+  {
+    slug: "monolith-to-microservices",
+    title: "System Design: From Monolith to Microservices",
+    excerpt:
+      "When a monolith stops scaling and when it doesn't. A pragmatic guide to identifying service boundaries, handling distributed data, and avoiding the common pitfalls of premature decomposition.",
+    date: "2025-10-22",
+    readTime: "14 min read",
+    tags: ["System Design", "Microservices", "Architecture"],
   },
 ];

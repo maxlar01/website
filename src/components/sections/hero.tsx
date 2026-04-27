@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Cloud, GitBranch, Server } from "lucide-react";
+import { ArrowRight, Code2, Layers, GitBranch } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/data";
 
@@ -91,7 +91,7 @@ export function HeroSection() {
               animate={{ y: [0, -8, 0] }}
               transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
             >
-              <Cloud className="h-10 w-10" />
+              <Code2 className="h-10 w-10" />
             </motion.div>
             <motion.div
               animate={{ y: [0, -8, 0] }}
@@ -102,7 +102,7 @@ export function HeroSection() {
                 delay: 0.5,
               }}
             >
-              <Server className="h-10 w-10" />
+              <Layers className="h-10 w-10" />
             </motion.div>
             <motion.div
               animate={{ y: [0, -8, 0] }}

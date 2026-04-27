@@ -13,7 +13,7 @@ import { blogPosts } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Blog | Moustafa Rakha",
   description:
-    "Articles about DevOps, cloud infrastructure, Kubernetes, CI/CD, and infrastructure as code.",
+    "Articles about software engineering, React, TypeScript, system design, and building modern web applications.",
 };
 
 export default function BlogPage() {
@@ -29,8 +29,8 @@ export default function BlogPage() {
             Blog
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Thoughts, tutorials, and deep-dives into DevOps practices, cloud
-            infrastructure, and automation.
+            Thoughts, tutorials, and deep-dives into software engineering,
+            React, TypeScript, system design, and building for the web.
           </p>
         </div>
 

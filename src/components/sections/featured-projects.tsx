@@ -34,7 +34,7 @@ export function FeaturedProjectsSection() {
             Featured Projects
           </h2>
           <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
-            Open-source tools and infrastructure projects I&apos;ve built.
+            Open-source tools and software projects I&apos;ve built.
           </p>
         </div>
 
